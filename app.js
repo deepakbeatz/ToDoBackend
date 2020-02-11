@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({
   app.use(bodyParser.json());
 
 mongoose.connect('mongodb+srv://dddd:deepbeatz08@cluster0-j2df9.mongodb.net/ToDo?retryWrites=true&w=majority', {useNewUrlParser: true});
-var PORT =9090;
+var PORT =process.env.PORT || 5000;
 
 //SERVICES
 app.get('/api/tasks', async (req, res) => {
