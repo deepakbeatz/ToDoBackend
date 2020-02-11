@@ -14,4 +14,7 @@
     "express": "^4.17.1",
     "mongoose": "^5.8.11"
   }
+  "scripts":{
+    "start":"node app.js"
+  }
 }
